@@ -23,11 +23,16 @@
         <button id="login-btn">Log In</button>
       </div>
 
-      <!-- USER INFO -->
-      <div id="user-info" style="display: none" class="retro-box">
-        <p id="user-email"></p>
-        <button id="new-chat-btn">+ New Chat</button>
-        <div id="new-chat-form" style="display: none">
+      <!-- MAIN CHAT INTERFACE -->
+      <div id="main-chat" style="display: none" class="main-chat-interface">
+        <!-- USER HEADER -->
+        <div class="user-header">
+          <p id="user-email-main"></p>
+          <button id="new-chat-btn">+ New Chat</button>
+        </div>
+
+        <!-- NEW CHAT FORM -->
+        <div id="new-chat-form" style="display: none" class="new-chat-form">
           <input
             type="text"
             id="chat-username"
@@ -35,18 +40,29 @@
           />
           <button id="start-chat-btn">Start Chat</button>
         </div>
-      </div>
 
-      <!-- CHAT -->
-      <div id="chat" style="display: none" class="retro-box">
-        <h2 id="chat-with"></h2>
-        <textarea
-          id="message"
-          placeholder="Type your message..."
-          rows="3"
-        ></textarea>
-        <button id="send-btn">➤</button>
-        <div id="messages"></div>
+        <!-- CHAT LIST VIEW -->
+        <div id="chat-list-view" class="chat-list-view">
+          <h3>Your Chats</h3>
+          <div id="chats"></div>
+        </div>
+
+        <!-- CHAT VIEW -->
+        <div id="chat-view" style="display: none" class="chat-view">
+          <div class="chat-header">
+            <button id="back-btn">← Back</button>
+            <h2 id="chat-with"></h2>
+          </div>
+          <div id="messages"></div>
+          <div class="message-input">
+            <textarea
+              id="message"
+              placeholder="Type your message..."
+              rows="3"
+            ></textarea>
+            <button id="send-btn">➤</button>
+          </div>
+        </div>
       </div>
     </div>
 
