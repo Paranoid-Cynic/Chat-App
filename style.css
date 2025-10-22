@@ -1,0 +1,28 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    width: 300px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#auth {
+    margin-bottom: 20px;
+}
+
+#user-info {
+    margin-bottom: 20px;
+}
+
+#qr-code {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+}
+
+#chat {
+    margin-bottom: 20px;
+}
