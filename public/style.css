@@ -221,20 +221,20 @@ button:hover {
   word-wrap: break-word;
 }
 
-#messages p:nth-child(odd) {
+#messages p.sent {
   background: #dcf8c6;
-  color: #303030;
-  align-self: flex-start;
-  margin-right: auto;
-  border-bottom-left-radius: 4px;
-}
-
-#messages p:nth-child(even) {
-  background: #ffffff;
   color: #303030;
   align-self: flex-end;
   margin-left: auto;
   border-bottom-right-radius: 4px;
+}
+
+#messages p.received {
+  background: #ffffff;
+  color: #303030;
+  align-self: flex-start;
+  margin-right: auto;
+  border-bottom-left-radius: 4px;
 }
 
 /* Message input area */

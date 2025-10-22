@@ -461,7 +461,13 @@ function listenToMessages() {
         (msg.from === chatPartnerId && msg.to === user.uid)
       ) {
         const p = document.createElement("p");
-        p.textContent = msg.from === user.uid ? msg.text : msg.text;
+        p.textContent = msg.text;
+        // Add class based on sender
+        if (msg.from === user.uid) {
+          p.classList.add("sent");
+        } else {
+          p.classList.add("received");
+        }
         messagesDiv.appendChild(p);
       }
     });
