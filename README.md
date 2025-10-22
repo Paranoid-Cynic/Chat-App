@@ -1,6 +1,6 @@
 # Chat Axis
 
-A real-time chat application built with Firebase, featuring WhatsApp-style messaging interface and keyboard shortcuts.
+A real-time chat application built with Firebase.
 
 ## Features
 
