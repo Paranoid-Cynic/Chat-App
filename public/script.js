@@ -22,7 +22,7 @@ import {
 
 // ✅ Your Firebase Config
 const firebaseConfig = {
-  apiKey: "api_key",
+  apiKey: "AIzaSyDcJPuPV6Se67JSw8adBNQmX0jpg4F8Z70",
   authDomain: "chat-app-74522.firebaseapp.com",
   projectId: "chat-app-74522",
   storageBucket: "chat-app-74522.firebasestorage.app",
