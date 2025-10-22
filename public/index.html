@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Axis</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="crt-overlay"></div>
+    <div id="app" class="retro-container">
+      <h1>Chat Axis</h1>
+
+      <!-- AUTH SECTION -->
+      <div id="auth" class="retro-box">
+        <input type="text" id="username" placeholder="Enter Username" />
+        <input type="password" id="password" placeholder="Enter Password" />
+        <button id="signup-btn">Sign Up</button>
+        <button id="login-btn">Log In</button>
+      </div>
+
+      <!-- USER INFO -->
+      <div id="user-info" style="display: none" class="retro-box">
+        <p id="user-email"></p>
+        <button id="new-chat-btn">+ New Chat</button>
+        <div id="new-chat-form" style="display: none">
+          <input
+            type="text"
+            id="chat-username"
+            placeholder="Enter username to chat with"
+          />
+          <button id="start-chat-btn">Start Chat</button>
+        </div>
+      </div>
+
+      <!-- CHAT -->
+      <div id="chat" style="display: none" class="retro-box">
+        <h2 id="chat-with"></h2>
+        <textarea
+          id="message"
+          placeholder="Type your message..."
+          rows="3"
+        ></textarea>
+        <button id="send-btn">➤</button>
+        <div id="messages"></div>
+      </div>
+    </div>
+
+    <!-- Firebase & QR scripts -->
+    <script type="module" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+  </body>
+</html>
