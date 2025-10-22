@@ -7,6 +7,7 @@ A real-time chat application built with Firebase.
 - User authentication with username and password
 - Real-time messaging between users
 - Username-based chat initiation
+- Firebase hosting and Firestore database
 
 
 ## Live Demo
